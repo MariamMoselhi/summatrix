@@ -19,26 +19,22 @@ Features
 
  Repository Structure
 -----------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   summatrix/  │── summatrix.py        # Main pipeline entry point  │── metrics.py          # Evaluation metrics (semantic, fluency, coherence, etc.)  │── utils.py            # Helper functions (data loading, formatting, etc.)  │── examples/           # Example usage and sample datasets  │── README.md           # Project documentation   `
-
+`summatrix/  │── summatrix.py        # Main pipeline entry point  
+            │── metrics.py          # Evaluation metrics (semantic precision, fluency, coherence, recall)  
+ `           
 Installation
 ---------------
 
 Clone the repository:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/yourusername/summatrix.git  cd summatrix   `
+`   git clone https://github.com/yourusername/summatrix.git  cd summatrix   `
 
-(Optional) install requirements:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install -r requirements.txt   `
 
 Usage
 -----------
 
 ### 1\. Evaluate a dataset
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   from summatrix import Summatrix  pipeline = Summatrix("input.csv")    results = pipeline.run(detailed=True)    print(results)   `
+`   from summatrix import Summatrix  pipeline = Summatrix("input.csv")    results = pipeline.run(detailed=True)    print(results)   `
 
 ### 2\. Example CSV format
 
