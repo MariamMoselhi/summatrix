@@ -30,7 +30,12 @@ Usage
 -----------
 
 ### 1\. Evaluate a dataset
-`   from summatrix import Summatrix  pipeline = Summatrix("input.csv")    results = pipeline.run(detailed=True)    print(results)   `
+`   from summatrix.summatrix import Summatrix
+
+pipeline = Summatrix("input.csv")
+results = pipeline.run(detailed=True)
+print(results)
+ `
 
 ### 2\. Example CSV format
 
