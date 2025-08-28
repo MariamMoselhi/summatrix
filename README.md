@@ -19,9 +19,9 @@ Features
 
  Repository Structure
 -----------------------
-`summatrix/  │── summatrix.py        # Main pipeline entry point  
+summatrix/  │── summatrix.py        # Main pipeline entry point  
             │── metrics.py          # Evaluation metrics (semantic precision, fluency, coherence, recall)  
- `           
+            
 Installation
 ---------------
 
