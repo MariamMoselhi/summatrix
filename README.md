@@ -23,19 +23,20 @@ Installation
 
 Clone the repository:
 
-`   git clone https://github.com/yourusername/summatrix.git  cd summatrix   `
+`   git clone https://github.com/MariamMoselhi/summatrix.git ` 
+`   cd summatrix   `
 
 
 Usage
 -----------
 
 ### 1\. Evaluate a dataset
-`   from summatrix.summatrix import Summatrix
+`from summatrix.summatrix import Summatrix `
 
-pipeline = Summatrix("input.csv")
-results = pipeline.run(detailed=True)
-print(results)
- `
+`pipeline = Summatrix("input.csv") `
+`results = pipeline.run(detailed=True)`
+`print(results)`
+ 
 
 ### 2\. Example CSV format
 
