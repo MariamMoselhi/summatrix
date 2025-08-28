@@ -17,10 +17,6 @@ Features
 *   **CSV/JSON support**: Works directly with structured summarization datasets.
     
 
- Repository Structure
------------------------
-summatrix/  │── summatrix.py        # Main pipeline entry point  
-            │── metrics.py          # Evaluation metrics (semantic precision, fluency, coherence, recall)  
             
 Installation
 ---------------
