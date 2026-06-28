@@ -24,10 +24,10 @@ def evaluate_summarization(input_csv, detailed=False, output_csv="outputs/Summar
             fluency = evaluate_fluency(row["generated_summary"], detailed=detailed)
             scores.append([precision, recall, coherence, fluency])
         except Exception as e:
-            print(f"⚠️ Error at ID {row['id']}: {e}")
+            print(f" Error at ID {row['id']}: {e}")
             scores.append([None, None, None, None])
         time.sleep(5)
 
     df[["precision", "recall", "coherence", "fluency"]] = scores
     df.to_csv(output_csv, index=False, encoding="utf-8")
-    print(f"\n✅ Evaluation complete. Results saved to {output_csv}")
+    print(f"\n Evaluation complete. Results saved to {output_csv}")
